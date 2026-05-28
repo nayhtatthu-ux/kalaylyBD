@@ -2,7 +2,29 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Dancing+Script:wght@700&display=swap');
 *{box-sizing:border-box;margin:0;padding:0;}
-.app{width:100%;max-width:390px;margin:0 auto;font-family:'Nunito',sans-serif;border-radius:28px;overflow:hidden;position:relative;min-height:620px;background:linear-gradient(170deg,#fde8f0 0%,#fccfe3 55%,#fbbad6 100%);}
+.app{
+  width:100%;
+  min-height:100vh;
+  margin:0;
+  font-family:'Nunito',sans-serif;
+  position:relative;
+  overflow:hidden;
+
+  /* REMOVE small centered phone look */
+  max-width:none;
+  border-radius:0;
+
+  /* FULL pink background */
+  background:linear-gradient(170deg,#fde8f0 0%,#fccfe3 55%,#fbbad6 100%);
+}
+html,body{
+  width:100%;
+  min-height:100%;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  background:linear-gradient(170deg,#fde8f0 0%,#fccfe3 55%,#fbbad6 100%);
+}
 .scene{width:100%;min-height:620px;display:none;flex-direction:column;align-items:center;padding:28px 18px 24px;position:relative;}
 .scene.on{display:flex;}
 .floats{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;}
