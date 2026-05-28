@@ -428,9 +428,6 @@ function peelEnvelope(){
   const music=document.getElementById('bg-music');
   music.currentTime=20.5;
   music.play();
-  music.ontimeupdate=function(){
-    if(music.currentTime>=69){music.pause();}
-  };
   document.getElementById('env-l').style.animation='envPeelLeft 0.7s 0.05s ease forwards';
   document.getElementById('env-r').style.animation='envPeelRight 0.7s 0.1s ease forwards';
   document.getElementById('env-t').style.animation='envPeelTop 0.6s 0s ease forwards';
